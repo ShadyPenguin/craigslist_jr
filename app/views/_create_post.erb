@@ -1,16 +1,23 @@
 <h1>Create A Post</h1>
 
-<form action="#" method="POST">
-  
-  <input type="text" name="post_title">
+<form action="/post/create/" method="POST">  
+  <label>Choose your Category: <select name="post[category_id]">
+    <option value="1">Houses</option>
+    <option value="2">Bikes</option>
+    <option value="3">Skis</option>
+  </select></label>
+  <div>
+    <label>Post Title: <input type="text" name="post[title]"></label>
+  </div>
 
-  <input type="text" name="post_content">
-
-  <input type="text" name="post_category">
-
-  <input type="text" name="post_price">
-
-  <input type="text" name="post_email">
-
+  <div>
+    <label>Post Price: <input type="text" name="post[price]"></label>
+  </div>
+  <div>
+    <label>Poster Email: <input type="text" name="post[email]"></label>
+  </div>
+  <div>
+    <label>Post Content: <textarea rows="10" name="post[content]"></textarea></label>
+  </div>
   <input type="submit">
 </form>

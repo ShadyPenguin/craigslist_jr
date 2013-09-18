@@ -1,0 +1,7 @@
+<h1><%= @category.name.capitalize %> For Sale</h1>
+<% @category.posts.each do |post| %>
+<br>
+<a href="/posts/<%=post.id %>/"> <%= post.title %> </a>
+<% end %>
+
+
